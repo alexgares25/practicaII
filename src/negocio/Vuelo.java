@@ -1,5 +1,4 @@
-package n
-egocio;
+package negocio;
 
 public class Vuelo{
 	private int numvuelo;
