@@ -29,7 +29,7 @@ public class Programa{
 	}
 	private void volcarVuelos(){
 		try{
-			Filewriter fw = new FileWriter("vuelos.csv);
+			Filewriter fw = new FileWriter("vuelos.csv");
 			for(Vuelo vuelo : reservavuelo){
 			  fw.write(vuelo.getnumvuelo() + "," +
 					  vuelo.getorigen() + "," +
