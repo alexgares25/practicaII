@@ -1,6 +1,6 @@
 package puntoEntrada;
 
-import presentacion.*;
+import presentacion.InterfazUsuario;
 
 public class Principal{
 	public static void main(String[] args){

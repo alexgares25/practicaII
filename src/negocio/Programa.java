@@ -55,10 +55,11 @@ public class Programa{
 			Scanner sc = new Scanner(fichero);
 			sc.useDelimiter(",|\n");
 			while(sc.hasNext()){
-				Vuelo vuelo = new Vuelo(sc.nextInt(),
-						sc.next(),
-						sc.next(),
-						sc.nextFloat());
+				int numeroVuelo = sc.nextInt();
+				String origen = sc.next().trim();
+				String destino = sc.next().trim();
+				float precio = Float.parseFloat(sc.next().trim());
+				Vuelo vuelo = new Vuelo(numeroVuelo, origen, destino, precio);
 				reservavuelo.add(vuelo);
 
 

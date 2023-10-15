@@ -10,7 +10,7 @@ public class InterfazUsuario{
 	private static String normal = "\033[0m";
 	private static String rojo = "\u001B[31m";
 	private static String blanco = "\u001B[37m";
-	private static void ejecutar(String[] instruccion){
+	public static void ejecutar(String[] instruccion){
 		
 
 		if (instruccion[0].equalsIgnoreCase("mostrar") && instruccion.length == 1) {
@@ -21,7 +21,7 @@ public class InterfazUsuario{
 			Vuelo vuelo = new Vuelo(intruccion1, instruccion[2],instruccion[3], instruccion4);
 			Programa programa = new Programa();
 			programa.annadir(vuelo);
-		}else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.lenght == 1){
+		}else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.length == 1){
 			ayuda();
 		}else {
 			System.out.println(rojo + "El formato utilizado en la entrada es incorrecto " + blanco);
@@ -30,14 +30,15 @@ public class InterfazUsuario{
 	}
 
 	private static void mostrarVuelos(){
-		ArrayList<Vuelo> listaVuelos = vuelo.getreservavuelo();
+		Programa programa = new Programa();
+		ArrayList<Vuelo> listaVuelos = programa.getreservavuelo();
 		for (Vuelo vuelo :listaVuelos){
 			System.out.println(vuelo);
 		}
 	}
 
 	private static void ayuda(){
-		System.out.printl("\n" + negrita +"DESCRIPCIÓN"+normal);
+		System.out.println("\n" + negrita +"DESCRIPCIÓN"+normal);
 		System.out.println("\tEsta aplicación ofrece las siguientes funcionalidades : \n\n" +
 				"\t- Permite añadir un nuevo vuelo a las reservas\n" +
 				"\t- Permite mostrar todos los vuelos que hay en las reservas\n");
