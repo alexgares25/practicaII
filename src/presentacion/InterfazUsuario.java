@@ -2,7 +2,8 @@ package presentacion;
 
 import java.util.ArrayList;
 
-import negocio.*;
+import negocio.Vuelo;
+import negocio.Programa;
 
 public class InterfazUsuario{
 	private static String negrita = "\u001B[1m";
@@ -12,12 +13,15 @@ public class InterfazUsuario{
 	private static void ejecutar(String[] instruccion){
 		
 
-		if (instruccion[0].equalsIgnoreCase("mostrar") && instruccion.length == 1 {
-			mostrarVUelos(vuelo);
+		if (instruccion[0].equalsIgnoreCase("mostrar") && instruccion.length == 1) {
+			mostrarVuelos();
 		}else if (instruccion[0].equalsIgnoreCase("añadir") && instruccion.length == 5){
-			Vuelo vuelo = new Vuelo(instruccion[1], instruccion[2],instruccion[3], instruccion[4]);
-			vuelo.annadir(vuelo);
-		}else if (instruccion[0].equalsignorecase("ayuda") && instruccion.lenght == 1){
+			int intruccion1 = Integer.parseInt(instruccion[1]);
+			float instruccion4 = (float) Double.parseDouble(instruccion[4]);
+			Vuelo vuelo = new Vuelo(intruccion1, instruccion[2],instruccion[3], instruccion4);
+			Programa programa = new Programa();
+			programa.annadir(vuelo);
+		}else if (instruccion[0].equalsIgnoreCase("ayuda") && instruccion.lenght == 1){
 			ayuda();
 		}else {
 			System.out.println(rojo + "El formato utilizado en la entrada es incorrecto " + blanco);
@@ -25,12 +29,13 @@ public class InterfazUsuario{
 		}
 	}
 
-	private static void mostrarVuelos(Vuelos vuelo){
-		ArrayList<Vuelo> listavuelos = vuelo.getreservavuelo();
-		for (Vuelo vuelo :listavuelos){
+	private static void mostrarVuelos(){
+		ArrayList<Vuelo> listaVuelos = vuelo.getreservavuelo();
+		for (Vuelo vuelo :listaVuelos){
 			System.out.println(vuelo);
 		}
 	}
+
 	private static void ayuda(){
 		System.out.printl("\n" + negrita +"DESCRIPCIÓN"+normal);
 		System.out.println("\tEsta aplicación ofrece las siguientes funcionalidades : \n\n" +

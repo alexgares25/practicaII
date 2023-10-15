@@ -1,4 +1,5 @@
 package negocio;
+import negocio.Vuelo;
 
 import java.util.ArrayList;
 import java.io.FileWriter;
@@ -8,17 +9,16 @@ import java.util.Scanner;
 
 public class Programa{
 
-	private ArrayList<Vuelo> reservavuelo = new ArrayList<>()
+	private ArrayList<Vuelo> reservavuelo = new ArrayList<>();
 	
+	public Programa(){
+		cargarVuelos();
+	}	
 
 	public void annadir(Vuelo vuelo){
 		reservavuelo.add(vuelo);
 		volcarVuelos();
 		
-	}
-
-	public Programa(){
-		cargarvuelos();
 	}
 
 
@@ -29,7 +29,7 @@ public class Programa{
 	}
 	private void volcarVuelos(){
 		try{
-			Filewriter fw = new FileWriter("vuelos.csv");
+			FileWriter fw = new FileWriter("vuelos.csv");
 			for(Vuelo vuelo : reservavuelo){
 			  fw.write(vuelo.getnumvuelo() + "," +
 					  vuelo.getorigen() + "," +
@@ -51,13 +51,14 @@ public class Programa{
 		try{
 			File fichero = new File("vuelos.csv");
 			//crea el fichero si no existe
-			fichero.createnewfile();
+			fichero.createNewFile();
 			Scanner sc = new Scanner(fichero);
 			sc.useDelimiter(",|\n");
-			while(sc.hasnext()){
-				Vuelo vuelo = new Vuelo(sc.next(),
+			while(sc.hasNext()){
+				Vuelo vuelo = new Vuelo(sc.nextInt(),
 						sc.next(),
-						sc.next());
+						sc.next(),
+						sc.nextFloat());
 				reservavuelo.add(vuelo);
 
 

@@ -33,9 +33,9 @@ public class Vuelo{
 		return precio;
 	}
 
-
+	
 	public String tostring(){
-		return "Numero de vuelo:#" getnumvuelo() + "-Origen: " + getorigen() + "-Destino: " + getdestino() + "-Precio:" + getprecio() + "€";
+		return "Numero de vuelo:#"+ getnumvuelo() + "-Origen: " + getorigen() + "-Destino: " + getdestino() + "-Precio:" + getprecio() + "€";
 	}
 
 
