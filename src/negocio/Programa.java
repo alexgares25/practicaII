@@ -56,9 +56,9 @@ public class Programa{
 			sc.useDelimiter(",|\n");
 			while(sc.hasNext()){
 				int numeroVuelo = sc.nextInt();
-				String origen = sc.next().trim();
-				String destino = sc.next().trim();
-				float precio = Float.parseFloat(sc.next().trim());
+				String origen = sc.next();
+				String destino = sc.next();
+				float precio = Float.parseFloat(sc.next());
 				Vuelo vuelo = new Vuelo(numeroVuelo, origen, destino, precio);
 				reservavuelo.add(vuelo);
 
