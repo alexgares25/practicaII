@@ -17,7 +17,7 @@ En este sistema puedes añadir un vuelo indicando el número de vuelo el Origen 
 
 
 ### Manual de Instalación
-Pasos para realizar la **instalacion** del programa
+Sigue estos pasos para **instalar** el programa:
 
 1.Primero descargarse el código fuente
 
@@ -34,28 +34,28 @@ Una vez dentro compilaremos el codigo
   ```find src -name "*.java" | xargs javac -cp bin -d bin```
   
 #### Manual de Uso
-Usos del programa
+Aquí hay algunas operaciones comunes que puedes realizar con el programa:
 
--Para crear/añadir un nuevo vuelo
+-Añadir un nuevo Vuelo:
 
     java cp bin java -cp bin puntoEntrada.Principal añadir numerovuelo Origen Destino Precio
 
-Ese seria el formato para añadir/crear un nuevo vuelo.Un ejemplo sería: 
+Ejemplo para añadir un nuevo vuelo: 
 
     java cp bin java -cp bin puntoEntrada.Principal añadir 7889 Valencia Madrid 150
 
-Ejecutando este comando creariamos un nuevo vuelo con los Datos: Numero de Vuelo = 7889, Origen = Valencia, Destino = Madrid, Precio = 150
+Este comando crea un nuevo vuelo con los datos: Número de Vuelo = 7889, Origen = Valencia, Destino = Madrid, Precio = 150€.
 
--Para mostrar los vuelos disponibles
+-Mostrar Vuelos disponilbles:
 
     java cp bin java -cp bin puntoEntrada.Principal mostrar
     
-    $ Este es el resultado al ejecutar el comando.
-    Resultado esperado o mensaje de salida.
+  Este es el resultado al ejecutar el comando:
+  
+  ```Numero de vuelo:#7889 -Origen:Valencia -Destino:Madrid -Precio:150€```
     
-    
-    
-2. Elemento 2
-3. Elemento 3
-Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de una manera muy sencilla.
+-Para obtener ayuda ejecuta este comando:
+
+    java cp bin java -cp bin puntoEntrada.Principal ayuda
+
 
