@@ -1,9 +1,8 @@
 
 ## Reserva de Vuelos
 ### Manual De Guías
-  -[Manual de Instalacion](manual-de-instalacion)
-  -Manual de Uso
-  aa
+  1. [Manual de Instalacion](#manual-de-instalacion)
+  2. [Manual de Uso](#manual-de-uso)
   a
   a
   a
@@ -76,7 +75,7 @@ a
 
 
 
-#### Manual de Instalacion
+## Manual de Instalacion
 Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
 - Elemento 1
 - Elemento 2
