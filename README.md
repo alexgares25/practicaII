@@ -75,7 +75,8 @@ a
 
 
 
-## Instalación
+## Introducción
+
 
 
 ## Manual de Instalación
