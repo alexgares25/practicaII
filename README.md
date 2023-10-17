@@ -1,8 +1,9 @@
 
 ## Reserva de Vuelos
-### Manual De Guías
-  1. [Manual de Instalacion](#manual-de-instalacion)
-  2. [Manual de Uso](#manual-de-uso)
+### Índice
+  1. [Introducción](#introducción)
+  2. [Manual de Instalación](#manual-de-instalación)
+  3. [Manual de Uso](#manual-de-uso)
   a
   a
   a
@@ -74,8 +75,10 @@ a
 
 
 
+## Instalación
 
-## Manual de Instalacion
+
+## Manual de Instalación
 Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
 - Elemento 1
 - Elemento 2
@@ -88,3 +91,4 @@ Este es un ejemplo de texto que da entrada a una lista numerada:
 2. Elemento 2
 3. Elemento 3
 Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de una manera muy sencilla.
+
