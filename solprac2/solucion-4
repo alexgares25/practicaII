@@ -1,0 +1,35 @@
+ps aux | grep $USER
+history -a
+cp /home/alexgares/.bash_history /home/alexgares/solprac2/solucion-3.3
+clear
+echo "Alejandro Gomez"
+echo "Apartado 4"
+sudo adduser Lucas
+sudo adduser lucas
+sudo adduser aitana
+sudo addgroup asignatura1
+sudo addgroup asignatura2
+sudo usermod -aG asignatura1 lucas 
+sudo usermod -aG asignatura2 aitana
+mkdir -p /home/alexgares/gisias/asignatura1/practica1 /home/alexgares/gisias/asignatura2/practica1 /home/alexgares/gisias/asgnatura3
+ls
+ls gisias/as[B
+tree gisias/
+tree /home/alexgares/
+clear
+chmod 700 /home/alexgares/gisias/asignatura2/practica1
+chmod 700 /home/alexgares/gisias/asignatura1/practica1
+chmod 700 /home/alexgares/gisias/asignatura3
+ls gisias/
+mv asgnatura3 asignatura3
+mv gisias/asgnatura3 gisias/asignatura3
+chmod 700 /home/alexgares/gisias/asignatura3
+ls -l gisias/
+sudo -u lucas ls /home/alexgares/gisias/asignatura2/practica1
+sudo -u aitana /home/alexgares/gisias/asignatura1/practica1
+sudo -u lucas /home/alexgares/gisias/asignatura3
+sudo -u lucas ls /home/alexgares/gisias/asignatura3
+sudo -u aitana ls /home/alexgares/gisias/asignatura3
+sudo -u lucas ls /home/alexgares/gisias/asignatura1/practica1
+sudo -u lucas ls /home/alexgares/gisias/asignatura1/practica1/
+history -a
