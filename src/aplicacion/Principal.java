@@ -23,6 +23,6 @@ public class Principal {
 
         long pasos = Long.parseLong(args[0]);
 
-        System.out.println("El número PI es " + Matematicas.generarNumeroPiIterativo(pasos));
+        System.out.println("El número PI es " + Matematicas.generarNumeroPiRecursivo(pasos));
     }
 }
