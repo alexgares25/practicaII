@@ -55,7 +55,7 @@ Para obtener una estimación de Pi, puedes ejecutar el siguiente comando en la l
 
     java -jar pi.jar 100
 
-El resultado que mostraria la aplicacion seria:
+El **resultado** que mostraria la aplicacion seria:
 
     El numero PI es 3.24
     
