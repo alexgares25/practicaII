@@ -15,13 +15,13 @@ Sigue estos pasos para **instalar** y ejecutar el programa:
 ### 1.Primero descargarse el código fuente
 Primero, **clona** el repositorio desde GitHub a tu máquina local usando Git:
 
-      git clone https://github.com/alexgares25/practicaI.git
+      git clone https://github.com/alexgares25/practicaII.git
 
 ### 2.Accede al Directorio del Proyecto.
 
 Navega al directorio del proyecto después de la descarga:
 
-    cd practicaI
+    cd practicaII
 
 ### 3.Compilar el Código Fuente
 Compila el **código fuente** usando el siguiente comando. Esto asegurará que los archivos .class se generen en el directorio bin/:
@@ -51,9 +51,9 @@ Para obtener una estimación de Pi, puedes ejecutar el siguiente comando en la l
 
     java -jar pi.jar <numero_de_pasos>
 
-## Un ejemplo usando 100000 pasos
+## Un ejemplo usando 100 pasos
 
-    java -jar pi.jar 100000
+    java -jar pi.jar 100
 
 ## Licencia
 **Copyright** [2023] [alexgares25]
