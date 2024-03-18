@@ -1,4 +1,4 @@
-# Aproximación Recursiva de Pi con Montecarlo
+# Aproximación Pi con Montecarlo mediante expresiones lambda
 ## Índice
   1. [Introducción](#introducción)
   2. [Manual de Instalación](#manual-de-instalación)
@@ -6,7 +6,7 @@
   4. [Licencia](#licencia)
 
 ## Introducción
-Bienvenido al programa de aproximación recursiva de Pi mediante el método de Montecarlo realizado por Alejandro Gómez Ares. Este programa, implementado en Java, utiliza la generación de puntos aleatorios de manera recursiva para estimar el valor de Pi. La lógica detrás del método se basa en la relación entre el área de un cuarto de círculo y el área de un cuadrado que lo contiene.
+Bienvenido al programa de aproximación de Pi mediante expresiones lambda utilizando el método de Montecarlo. Este programa, implementado en Java, utiliza expresiones lambda para generar puntos aleatorios y estimar el valor de Pi. La lógica detrás del método se basa en la relación entre el área de un cuarto de círculo y el área de un cuadrado que lo contiene.
 
 
 ## Manual de Instalación
